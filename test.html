@@ -1,0 +1,54 @@
+<!doctype html>
+
+<html>
+
+<head>
+  <title>GhostCat</title>
+</head>
+<style>
+
+
+#html2canvas {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+  }
+
+  .css3d-wapper {
+    pointer-events: none;
+    color: #080039;
+    width: 100%;
+  }
+
+  .css3d-wapper .fire-div {
+    font-size: 100px;
+    font-weight: 500;
+    width: fit-content;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 8px 10px;
+    opacity: 0.9;
+    background: #ebefff;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: #1593ff 8px solid;
+  }
+
+  #earth-canvas {
+    width: 700px;
+    height: 700px;
+  }
+</style>
+
+<body>
+  <div id="loading">
+  </div>
+  <div id="html2canvas" class="css3d-wapper">
+    <div class="fire-div"></div>
+  </div>
+  <div id="earth-canvas"></div>
+  <script src="/dist/bundle.js"></script>
+</body>
+</html>
